@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8"/>
+<meta th:include="include/header::header" th:remove="tag"></meta>
+<title>Insert title here</title>
+<script type="text/javascript">
+$(function(){
+	alert('ok');
+});
+</script>
+</head>
+<body>
+	<table>
+		<tr th:each="row:${alist}">
+			<td><span th:text="${row.empno}"></span></td>
+			<td><span th:text="${row.ename}"></span></td>
+			<td><span th:text="${row.sal}"></span></td>
+			<td><span th:text="${row.deptno}"></span></td>
+		</tr>
+	</table>
+</body>
+</html>
