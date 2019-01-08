@@ -57,11 +57,38 @@
 	    </dependency>
 		
 		<!-- https://mvnrepository.com/artifact/com.oracle/ojdbc14 -->
-		<dependency>
+		<!-- <dependency>
 		    <groupId>com.oracle</groupId>
 		    <artifactId>ojdbc14</artifactId>
 		    <version>10.2.0.4.0</version>
+		</dependency> -->
+		<!-- https://mvnrepository.com/artifact/cn.easyproject/ojdbc6 -->
+		<dependency>
+		    <groupId>com.bit</groupId>
+		    <artifactId>ojdbc6</artifactId>
+		    <version>6.0.0</version>
 		</dependency>
+
+
+		<dependency>
+		    <groupId>javax.inject</groupId>
+		    <artifactId>javax.inject</artifactId>
+		    <version>1</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/javax.servlet/jstl -->
+		<dependency>
+		    <groupId>javax.servlet</groupId>
+		    <artifactId>jstl</artifactId>
+		    <version>1.2</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/taglibs/standard -->
+		<dependency>
+		    <groupId>taglibs</groupId>
+		    <artifactId>standard</artifactId>
+		    <version>1.1.2</version>
+		</dependency>
+		
+		
 		
 	</dependencies>
 
