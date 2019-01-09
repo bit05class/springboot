@@ -21,7 +21,7 @@ $(function(){
 <body>
 	<table>
 		<tr th:each="row:${alist}">
-			<td><span th:text="${row.empno}"></span></td>
+			<td><a th:href="@{'detail.do/'+${row.empno}}"><span th:text="${row.empno}"></span></a></td>
 			<td><span th:text="${row.ename}"></span></td>
 			<td><span th:text="${row.sal}"></span></td>
 			<td><span th:text="${row.deptno}"></span></td>

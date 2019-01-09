@@ -27,4 +27,14 @@ public class EmpServiceImpl implements EmpService {
 	public void delete(int idx) {
 		empDao.delOne(idx);
 	}
+
+	@Override
+	public EmpVo detail(int idx) {
+		return empDao.selectOne(idx);
+	}
+
+	@Override
+	public int edit(EmpVo bean) {
+		return empDao.updateOne(bean);
+	}
 }

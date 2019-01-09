@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8"/>
+<meta th:include="include/header::header" th:remove="tag"></meta>
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>상세페이지</h1>
+	<form method="post">
+		<input type="hidden" name="_method" value="put" />
+		<label for="empno">empno</label>
+		<input type="hidden" name="empno" id="empno" th:value="${bean.empno}"/>
+		<span th:text="${bean.empno}"></span><br/>
+		<label for="ename">ename</label>
+		<input type="text" name="ename" id="ename" th:value="${bean.ename}"/><br/>
+		<label for="sal">sal</label>
+		<input type="text" name="sal" id="sal" th:value="${bean.sal}"/><br/>
+		<label for="deptno">deptno</label>
+		<input type="text" name="deptno" id="deptno" th:value="${bean.deptno}"/><br/>
+		<button>수정</button>
+	</form>
+</body>
+</html>
