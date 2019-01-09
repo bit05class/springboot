@@ -18,4 +18,13 @@ public class EmpServiceImpl implements EmpService {
 		return empDao.selectAll();
 	}
 
+	@Override
+	public void insert(EmpVo bean) {
+		empDao.insertOne(bean);
+	}
+
+	@Override
+	public void delete(int idx) {
+		empDao.delOne(idx);
+	}
 }

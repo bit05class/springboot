@@ -6,7 +6,15 @@
 <title>Insert title here</title>
 <script type="text/javascript">
 $(function(){
-	alert('ok');
+	$("tr>td:last-child >a").on('click',function(){
+		$.ajax({
+			url:$(this).attr('href'),
+			method:'delete'
+		}).done(function(){
+			window.location.reload();
+		});
+		return false;
+	});
 });
 </script>
 </head>
@@ -17,7 +25,9 @@ $(function(){
 			<td><span th:text="${row.ename}"></span></td>
 			<td><span th:text="${row.sal}"></span></td>
 			<td><span th:text="${row.deptno}"></span></td>
+			<td><a th:href="@{delete.do(idx=${row.empno})}">삭제</a></td>
 		</tr>
 	</table>
+	<a href="add.do">write</a>
 </body>
 </html>

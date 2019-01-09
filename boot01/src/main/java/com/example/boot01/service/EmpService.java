@@ -6,5 +6,9 @@ import com.example.boot01.model.entity.EmpVo;
 
 public interface EmpService {
 
-	public List<EmpVo> list();
+	List<EmpVo> list();
+	
+	void insert(EmpVo bean);
+
+	void delete(int idx);
 }
